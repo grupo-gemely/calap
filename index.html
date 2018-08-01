@@ -52,7 +52,23 @@
 	
 	</head>
 	<body>
-		
+			<script>(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+					fjs.parentNode.insertBefore(js, fjs);
+				  }(document, 'script', 'facebook-jssdk'));
+				  </script>
+
+				  <!-- Your customer chat code -->
+<div class="fb-customerchat"
+attribution="setup_tool"
+page_id="227410594630713"
+logged_in_greeting="Hola! Como podemos ayudarte"
+logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
+</div>
+
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
@@ -76,7 +92,7 @@
 									<div class="col-md-10 text-right menu-1">
 										<ul>
 											<li class="active"><a href="index.html">Inicio</a></li>
-											<li><a href="#">¿POR QUÉ CALAP?</a></li>
+											<li><a href="#porcalap">¿POR QUÉ CALAP?</a></li>
 											<li class="has-dropdown">
 												<a href="#">Servicios</a>
 												<ul class="dropdown">
@@ -150,7 +166,7 @@
 		  	</div>
 		</aside>
 		
-		<div class="colorlib-classes">
+		<div  id="porcalap" class="colorlib-classes">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 colorlib-heading center-heading text-center animate-box">
