@@ -91,6 +91,7 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 									</div>
 									<div class="col-md-10 text-right menu-1">
 										<style>
+
 											@media screen and (min-width: 768px) {
 												li ul {
 													display:none;
@@ -112,21 +113,23 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 													background: #000;
 													border-radius: 4px;
 													
-												}
+												} 
 											}
+											
 										</style>
 												
 										<ul>
 											<li class="active"><a href="index.html">Inicio</a></li>
 											<li><a href="#porcalap">¿POR QUÉ CALAP?</a></li>
 											<li class="has-dropdown">
-												<a href="#colorlib-counter">Servicios</a>
+												<a>Servicios</a>
 												<ul class="dropdown">
-													<li><a href="#">Toldos</a></li>
+													<li><a data-toggle="modal" data-target="#exampleModal">Toldos</a></li> 
 													<li><a href="#">Estrados</a></li>
 													<li><a href="#">Tribunas</a></li>
 													<li><a href="#">Estructuras</a></li>
-													<li><a href="">Mobiliarios</a>
+
+													<li><a >Mobiliarios</a>
 														<ul style="padding: 10px 10px 10px 10px;">
 															<li><a href="">Sillas</a></li>
 															<li><a href="">Mesas</a></li>
@@ -134,6 +137,7 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 															<li><a href="">Muebles lounge</a></li>
 														</ul>
 													</li>
+
 												</ul>
 											</li>
 											<li><a href="#">Galeria</a></li>
@@ -428,8 +432,28 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 						</div>
 					</div>
 				</div>
+		</div>
+<!-- Modal Servicios-->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
 			</div>
-
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+<!-- Modal Servicios-->
 		<footer id="colorlib-footer" style="background-color: #0b0b17;">
 			<div class="container">
 				<br>
