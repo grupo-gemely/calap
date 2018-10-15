@@ -124,23 +124,26 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 											<li class="has-dropdown">
 												<a>Servicios</a>
 												<ul class="dropdown">
-													<li><a data-toggle="modal" data-target="#exampleModal">Toldos</a></li> 
-													<li><a href="#">Estrados</a></li>
-													<li><a href="#">Tribunas</a></li>
-													<li><a href="#">Estructuras</a></li>
+														<ul style="padding: 10px 10px 10px 10px;">
+															<li><a >Toldos</a></li>
+															<li><a href="">Estrados</a></li>
+															<li><a href="">Tribunas</a></li>
+															<li><a href="">Pistas de Baile</a></li>
+														</ul>
+													</li>
 
 													<li><a >Mobiliarios</a>
 														<ul style="padding: 10px 10px 10px 10px;">
 															<li><a href="">Sillas</a></li>
 															<li><a href="">Mesas</a></li>
-															<li><a href="">Muebles de bar</a></li>
-															<li><a href="">Muebles lounge</a></li>
+															<li><a href="">Muebles de Bar</a></li>
+															<li><a href="">Muebles Lounge</a></li>
 														</ul>
 													</li>
 
 												</ul>
 											</li>
-											<li><a href="#">Galeria</a></li>
+											<li><a data-toggle="modal" data-target="#galeria">Galeria</a></li>
 											<li><a class="link-1" data-toggle="modal" data-target="#modalForm">CONTACTO</a></li>
 										</ul>
 									</div>
@@ -434,17 +437,115 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 				</div>
 		</div>
 <!-- Modal Servicios-->
-<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="galeria" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<div class="modal-header">
-			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			  <h3 class="modal-title text-center" id="exampleModalLabel">Nuestra Galeria</h3>
 			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			  </button>
 			</div>
 			<div class="modal-body">
-			  ...
+			 
+
+<!-- Grid row -->
+<div class="row">
+
+	  </div>
+	  <!-- Grid row -->
+	  
+	  <!-- Grid row -->
+	  <div class="gallery" id="gallery">
+	  
+		<!-- Grid column -->
+		<div class="mb-3 pics animation all 2">
+		  <img class="hola" src="images/1.jpg" alt="Card image cap">
+		</div>
+		<!-- Grid column -->
+	  
+		<!-- Grid column -->
+		<div class="mb-3 pics animation all 2">
+		  <img class="hola" src="images/2.jpg" alt="Card image cap">
+		</div>
+		<!-- Grid column -->
+	  
+		<!-- Grid column -->
+		<div class="mb-3 pics animation all 1">
+		  <img class="hola" src="images/3.jpg" alt="Card image cap">
+		</div>
+		<!-- Grid column -->
+	  
+		<!-- Grid column -->
+		<div class="mb-3 pics animation all 2">
+		  <img class="hola" src="images/4.jpg" alt="Card image cap">
+		</div>
+		<!-- Grid column -->
+	  
+		<!-- Grid column -->
+		<div class="mb-3 pics animation all 2">
+		  <img class="hola" src="images/5.jpg" alt="Card image cap">
+		</div>
+		<!-- Grid column -->
+	  
+		<!-- Grid column -->
+		<div class="mb-3 pics animation all 2">
+		  <img class="hola" src="images/6.jpg" alt="Card image cap">
+		</div>
+		<!-- Grid column -->
+	  
+	  </div>
+	  <!-- Grid row -->
+
+	  <style>
+	  .gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+	.hola{
+		padding: 4px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+	}
+	  </style>
+
+
+
+
 			</div>
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
