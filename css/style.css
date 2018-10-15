@@ -43,7 +43,7 @@ body {
       content: ""; }
 
 a {
-  color: #4586ff;
+  color:white;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -52,6 +52,9 @@ a {
     outline: none;
     text-decoration: none; }
 
+    a:hover {
+      outline: 0;
+    }
 p {
   margin-bottom: 20px; }
 
@@ -1367,7 +1370,6 @@ input[type="text"] {
     border: 1px solid rgba(255, 255, 255, 0.5); }
 
 #colorlib-footer {
-  padding-top: 6em;
   background: #302a39;
   color: rgba(255, 255, 255, 0.6) !important; }
   #colorlib-footer p {
@@ -1779,7 +1781,7 @@ input[type="text"] {
   padding-bottom: 7em !important; }
 
 .row-pb-md {
-  padding-bottom: 5em !important; }
+  padding-bottom: 1em !important; }
 
 .row-pb-sm {
   padding-bottom: 3em !important; }
