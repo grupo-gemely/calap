@@ -132,19 +132,19 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 												<ul class="dropdown">
 													<li><a>Estructuras</a>
 														<ul style="padding: 10px 10px 10px 10px;">
-															<li><a >Toldos</a></li>
-															<li><a href="">Estrados</a></li>
-															<li><a href="">Tribunas</a></li>
-															<li><a href="">Pistas de Baile</a></li>
+															<li><a  class="estr" id="toldos" data-toggle="modal" data-target="#modalServicios">Toldos</a></li>
+															<li><a  class="estr" id="estrados" data-toggle="modal" data-target="#modalServicios">Estrados</a></li>
+															<li><a  class="estr" id="tribunas" data-toggle="modal" data-target="#modalServicios">Tribunas</a></li>
+															<li><a  class="estr" id="pistas" data-toggle="modal" data-target="#modalServicios">Pistas de Baile</a></li>
 														</ul>
 													</li>
 
 													<li><a >Mobiliarios</a>
 														<ul style="padding: 10px 10px 10px 10px;">
-															<li><a href="">Sillas</a></li>
-															<li><a href="">Mesas</a></li>
-															<li><a href="">Muebles de Bar</a></li>
-															<li><a href="">Muebles Lounge</a></li>
+															<li><a  class="mobi" id="sillas" data-toggle="modal" data-target="#modalServicios">Sillas</a></li>
+															<li><a  class="mobi" id="mesas" data-toggle="modal" data-target="#modalServicios">Mesas</a></li>
+															<li><a  class="mobi" id="muebles1" data-toggle="modal" data-target="#modalServicios">Muebles de Bar</a></li>
+															<li><a  class="mobi" id="muebles2" data-toggle="modal" data-target="#modalServicios">Muebles Lounge</a></li>
 														</ul>
 													</li>
 
@@ -721,6 +721,129 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 				</div>
 		</div>
 
+		<!-- MODAL DE SERVICIO-->
+    
+    <div class="modal fade" id="modalServicios" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+						<div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Nuestros Servicio
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+												<!-- Nav tabs 
+												
+toldos
+estrados
+tribunas
+pistas
+muebles1
+muebles2
+sillas
+mesas
+		
+												-->
+
+                        <ul class="nav nav-tabs">
+                            <li id="nav_est"><a href="#tab_est" data-toggle="tab">Estructuras</a></li>
+                            <li id="nav_mob"><a href="#tab_mob" data-toggle="tab">Mobiliarios</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane" id="tab_est">
+																 soy el tab 01
+																 asdasdasdasdasd adsa
+																 dasdasdasd asd asdasdas dasdsad
+																 dasdasdasd asd asdasdas dasdsad
+																 dasdasdasd asd asdasdas dasdsad
+																 <br>
+																 
+																 <div class="row col-md-8 col-md-offset-1">
+
+																 
+																 <ul class="nav nav-tabs">
+																		<li id="nav_1"><a href="#tab_1" data-toggle="tab">Toldos</a></li>
+																		<li id="nav_2"><a href="#tab_2" data-toggle="tab">Estrados</a></li>
+																		<li id="nav_3"><a href="#tab_3" data-toggle="tab">Tribunas</a></li>
+																		<li id="nav_4"><a href="#tab_4" data-toggle="tab">Pistas de Baile</a></li>
+																</ul>
+																<!-- Tab panes -->
+																<div class="tab-content">
+																		<div class="tab-pane" id="tab_1">
+																				 soy el tab 01 de toldos
+																		</div>
+				
+																		<div class="tab-pane" id="tab_2">
+																				soy el tab 02 de estrados
+																		</div>
+
+																		<div class="tab-pane" id="tab_3">
+																				soy el tab 01 de tribunas
+																	 </div>
+			 
+																	 <div class="tab-pane" id="tab_4">
+																			 soy el tab 02 de pista de baile
+																	 </div>
+																</div>
+
+															</div>
+
+                            </div>
+
+                            <div class="tab-pane" id="tab_mob">
+																soy el tab 02
+																asdasdasdasdasd adsa
+																dasdasdasd asd asdasdas dasdsad
+																dasdasdasd asd asdasdas dasdsad
+																dasdasdasd asd asdasdas dasdsad
+																<br>
+																
+																<div class="row col-md-8 col-md-offset-1">
+																<ul class="nav nav-tabs">
+																	 <li id="nav_11"><a href="#tab_11" data-toggle="tab">Muebles de Bar</a></li>
+																	 <li id="nav_22"><a href="#tab_22" data-toggle="tab">Muebles Lounge</a></li>
+																	 <li id="nav_33"><a href="#tab_33" data-toggle="tab">Sillas</a></li>
+																	 <li id="nav_44"><a href="#tab_44" data-toggle="tab">Mesas</a></li>
+															 </ul>
+															 <!-- Tab panes -->
+															 <div class="tab-content">
+																	 <div class="tab-pane" id="tab_11">
+																				soy el tab 01 de Muebles de Bar
+																	 </div>
+			 
+																	 <div class="tab-pane" id="tab_22">
+																			 soy el tab 02 de Muebles Lounge
+																	 </div>
+
+																	 <div class="tab-pane" id="tab_33">
+																			 soy el tab 01 de Sillas
+																	</div>
+			
+																	<div class="tab-pane" id="tab_44">
+																			soy el tab 02 de pista de Mesas
+																	</div>
+															 </div>
+
+														 </div>
+                        		</div>
+												</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+		
+	
+		<!-- MODAL DE SERVICIO-->
+
+
 
 
 		<footer id="colorlib-footer" style="background-color: #0b0b17;">
@@ -850,6 +973,86 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 				}
 			});
 		</script>
+
+<script>
+	$(".estr").on('click',function(){
+
+		var id_estr=$(this).attr("id");
+
+		$('#nav_mob').removeClass('active');
+    $('#nav_est').addClass('active');
+
+		$('#tab_mob').removeClass('active');
+    $('#tab_est').addClass('active');
+
+
+		if(id_estr="toldos"){
+    	$('#nav_1').addClass('active');
+			$('#nav_2').removeClass('active');
+			$('#nav_3').removeClass('active');
+			$('#nav_4').removeClass('active');
+
+    	$('#tab_1').addClass('active');
+			$('#tab_2').removeClass('active');
+			$('#tab_3').removeClass('active');
+			$('#tab_4').removeClass('active');
+		}else if(id_estr="estrados"){
+			$('#nav_2').addClass('active');
+			$('#nav_1').removeClass('active');
+			$('#nav_3').removeClass('active');
+			$('#nav_4').removeClass('active');
+
+    	$('#tab_2').addClass('active');
+			$('#tab_1').removeClass('active');
+			$('#tab_3').removeClass('active');
+			$('#tab_4').removeClass('active');
+		}else if(id_estr="tribunas"){
+			$('#nav_3').addClass('active');
+			$('#nav_1').removeClass('active');
+			$('#nav_2').removeClass('active');
+			$('#nav_4').removeClass('active');
+
+    	$('#tab_3').addClass('active');
+			$('#tab_1').removeClass('active');
+			$('#tab_2').removeClass('active');
+			$('#tab_4').removeClass('active');
+		}else if(id_estr="pistas"){
+			$('#nav_4').addClass('active');
+			$('#nav_1').removeClass('active');
+			$('#nav_2').removeClass('active');
+			$('#nav_3').removeClass('active');
+
+    	$('#tab_4').addClass('active');
+			$('#tab_1').removeClass('active');
+			$('#tab_2').removeClass('active');
+			$('#tab_3').removeClass('active');
+		}
+
+     $('#RegLi').removeClass('active');
+     $('#loginLi').addClass('active');
+
+		 $('#Registration').removeClass('active');
+     $('#Login').addClass('active');
+})
+$(".mobi").on('click',function(){
+    $('#nav_est').removeClass('active');
+    $('#nav_mob').addClass('active');
+
+    $('#tab_est').removeClass('active');
+    $('#tab_mob').addClass('active');
+})
+/*
+toldos
+estrados
+tribunas
+pistas
+
+muebles1
+muebles2
+sillas
+mesas
+*/
+	</script>
 
 	</body>
 </html>
