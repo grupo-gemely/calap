@@ -977,7 +977,7 @@ mesas
 <script>
 	$(".estr").on('click',function(){
 
-		var id_estr=$(this).attr("id");
+		id_estr=$(this).attr("id");
 
 		$('#nav_mob').removeClass('active');
     $('#nav_est').addClass('active');
@@ -986,7 +986,7 @@ mesas
     $('#tab_est').addClass('active');
 
 
-		if(id_estr="toldos"){
+		if(id_estr==="toldos"){
     	$('#nav_1').addClass('active');
 			$('#nav_2').removeClass('active');
 			$('#nav_3').removeClass('active');
@@ -996,7 +996,7 @@ mesas
 			$('#tab_2').removeClass('active');
 			$('#tab_3').removeClass('active');
 			$('#tab_4').removeClass('active');
-		}else if(id_estr="estrados"){
+		}else if(id_estr==="estrados"){
 			$('#nav_2').addClass('active');
 			$('#nav_1').removeClass('active');
 			$('#nav_3').removeClass('active');
@@ -1006,7 +1006,7 @@ mesas
 			$('#tab_1').removeClass('active');
 			$('#tab_3').removeClass('active');
 			$('#tab_4').removeClass('active');
-		}else if(id_estr="tribunas"){
+		}else if(id_estr==="tribunas"){
 			$('#nav_3').addClass('active');
 			$('#nav_1').removeClass('active');
 			$('#nav_2').removeClass('active');
@@ -1016,7 +1016,7 @@ mesas
 			$('#tab_1').removeClass('active');
 			$('#tab_2').removeClass('active');
 			$('#tab_4').removeClass('active');
-		}else if(id_estr="pistas"){
+		}else if(id_estr==="pistas"){
 			$('#nav_4').addClass('active');
 			$('#nav_1').removeClass('active');
 			$('#nav_2').removeClass('active');
@@ -1027,19 +1027,58 @@ mesas
 			$('#tab_2').removeClass('active');
 			$('#tab_3').removeClass('active');
 		}
-
-     $('#RegLi').removeClass('active');
-     $('#loginLi').addClass('active');
-
-		 $('#Registration').removeClass('active');
-     $('#Login').addClass('active');
 })
 $(".mobi").on('click',function(){
+
+		id_mobi=$(this).attr("id");
+
     $('#nav_est').removeClass('active');
     $('#nav_mob').addClass('active');
 
     $('#tab_est').removeClass('active');
     $('#tab_mob').addClass('active');
+
+		if(id_mobi==="muebles1"){
+    	$('#nav_11').addClass('active');
+			$('#nav_22').removeClass('active');
+			$('#nav_33').removeClass('active');
+			$('#nav_44').removeClass('active');
+
+    	$('#tab_11').addClass('active');
+			$('#tab_22').removeClass('active');
+			$('#tab_33').removeClass('active');
+			$('#tab_44').removeClass('active');
+		}else if(id_mobi==="muebles2"){
+			$('#nav_22').addClass('active');
+			$('#nav_11').removeClass('active');
+			$('#nav_33').removeClass('active');
+			$('#nav_44').removeClass('active');
+
+    	$('#tab_22').addClass('active');
+			$('#tab_11').removeClass('active');
+			$('#tab_33').removeClass('active');
+			$('#tab_44').removeClass('active');
+		}else if(id_mobi==="sillas"){
+			$('#nav_33').addClass('active');
+			$('#nav_11').removeClass('active');
+			$('#nav_22').removeClass('active');
+			$('#nav_44').removeClass('active');
+
+    	$('#tab_33').addClass('active');
+			$('#tab_11').removeClass('active');
+			$('#tab_22').removeClass('active');
+			$('#tab_44').removeClass('active');
+		}else if(id_mobi==="mesas"){
+			$('#nav_44').addClass('active');
+			$('#nav_11').removeClass('active');
+			$('#nav_22').removeClass('active');
+			$('#nav_33').removeClass('active');
+
+    	$('#tab_44').addClass('active');
+			$('#tab_11').removeClass('active');
+			$('#tab_22').removeClass('active');
+			$('#tab_33').removeClass('active');
+		}
 })
 /*
 toldos
