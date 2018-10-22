@@ -15,19 +15,6 @@ http://www.templatemo.com/tm-400-polygon
 	color: #0F0;
 }
 
-a {
-	color: #b69e40; outline: 0;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-a:active, a:focus {
-	color: #b69e40;
-	border: none;
-	text-decoration: none;
-}
 
 button:focus { border: none; outline:none; }
 
@@ -119,28 +106,6 @@ button:focus { border: none; outline:none; }
     margin-left: 10px;
 }
 
-.smallhexagon {
-	width: 40px;
-	height: 46px;
-	background: #b69e40;
-	position: relative;
-	background: url(../images/templatemo_teamhexa.png) no-repeat;
-	margin-bottom: 10px;
-}
-.smallhexagon:before {
-	position: absolute;
-	left: 0;
-	width: 0;
-	height: 46px;
-
-}
-.smallhexagon:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 0;
-	height: 46px;
-}
 .smallhexagon .fa { font-size: 16px; color: #ffffff; line-height: 46px; }
 .templatemo_overlaytxt	{ margin-top: 105%; text-align: center; width: 100%; }
 
