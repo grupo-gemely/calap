@@ -330,14 +330,12 @@ button:focus { border: none; outline:none; }
 .templatemo_gallerygap span.fa	{ font-size: 22px; margin-bottom: 15px; }
 .templatemo_gallerytop	{ margin-top: 11%; }
 .templatemo_loadmore	{ 
-	margin: 0 auto; 
 	padding: 7px 0px; 
 	background: #ffa658; 
 	margin-top: 15%; 
 	text-align: center; 
 	font-size: 16px; 
 	width: 200px; 
-	margin-bottom:10%;
 	}
 
 .templatemo_loadmore button{ 
