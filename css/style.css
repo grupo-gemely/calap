@@ -11,7 +11,8 @@
 *
 * ======================================================= */
 body {
-  font-family: "Rubik", Arial, sans-serif;
+  /*font-family: "Rubik", Arial, sans-serif;*/
+  font: 13px pt-sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 17px;
   line-height: 1.5;
@@ -1361,8 +1362,7 @@ input[type="text"] {
   background: #302a39;
   color: rgba(255, 255, 255, 0.6) !important; }
   #colorlib-footer p {
-    font-size: 14px;
-    line-height: 1.8; }
+    font-size: 14px;}
   #colorlib-footer .f-blog {
     position: relative;
     padding: 0;
