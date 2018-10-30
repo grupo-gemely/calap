@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 
 	/************** LightBox ********************/
 	$(function(){
-		$('.lightbox1 .box .boxInner a').lightbox();
+		$('.lightbox1 .slide a').lightbox();
 		$('a[rel=lightbox2]').lightbox();
 	});
 
