@@ -21,6 +21,7 @@ jQuery(document).ready(function($){
 		$('[data-rel="lightbox1"]').lightbox();
 	});
 
+
 	$(function(){
 		$('[data-rel="lightbox2"]').lightbox();
 	});

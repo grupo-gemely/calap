@@ -257,14 +257,6 @@ button:focus { border: none; outline:none; }
 
 
 /* ---- Small Hexa ----*/
-.hex_footer {
-    width: 46px;
-	height: 40px;
-	position: relative;
-    background: url(../images/templatemo_footerhexa.png) no-repeat;
-}
-
- a:hover .hex_footer{ background: url(../images/templatemo_teamhexa_hover.png) no-repeat; }
 
 .hex_footer span.fa{ color: #ffffff; font-size: 16px; line-height: 40px; }
 
