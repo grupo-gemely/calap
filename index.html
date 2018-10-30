@@ -1206,6 +1206,10 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 		$(".dropdown>li").click(function(e) {
 			e.preventDefault();
 			var index = $(this).index();
+
+			$("div.bhoechie-tab-menu>div.list-group>a").siblings('a.active').removeClass("active");
+		  $("div.bhoechie-tab-menu>div.list-group>a").eq(index).addClass("active");
+
 			goToId("#service");
 			$("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
 			$("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
