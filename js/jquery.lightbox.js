@@ -1,7 +1,7 @@
 /*!
- * jquery.lightbox.js
+ * jquery.lightbox.js v1.3
  * https://github.com/duncanmcdougall/Responsive-Lightbox
- * Copyright 2013 Duncan McDougall and other contributors; @license Creative Commons Attribution 2.5
+ * Copyright 2016 Duncan McDougall and other contributors; @license Creative Commons Attribution 2.5
  *
  * Options: 
  * margin - int - default 50. Minimum margin around the image
@@ -31,31 +31,28 @@
             current: null,
             locked: false,
             caption: null,
-			
+
             init: function (items) {
                 plugin.items = items;
-				plugin.selector = "lightbox-"+Math.random().toString().replace('.','');
+                var id = 'lightbox-' + Math.floor((Math.random() * 100000) + 1);
 
-                if (!plugin.lightbox) {
-                    $('body').append(
-                      '<div id="lightbox" style="display:none;">'+
-                      '<a href="#" class="lightbox-close lightbox-button"></a>' +
-                      '<div class="lightbox-nav">'+
-                      '<a href="#" class="lightbox-previous lightbox-button"></a>' +
-                      '<a href="#" class="lightbox-next lightbox-button"></a>' +
-                      '</div>' +
-                      '<div href="#" class="lightbox-caption"><p></p></div>' +
-                      '</div>'
-                    );
+                $('body').append(
+                    '<div id="' + id + '" class="lightbox" style="display:none;">' +
+                    '<a href="#" class="lightbox__close lightbox__button"></a>' +
+                    '<a href="#" class="lightbox__nav lightbox__nav--prev lightbox__button"></a>' +
+                    '<a href="#" class="lightbox__nav lightbox__nav--next lightbox__button"></a>' +
+                    '<div href="#" class="lightbox__caption"><p></p></div>' +
+                    '</div>'
+                );
 
-                    plugin.lightbox = $("#lightbox");
-                    plugin.caption = $('.lightbox-caption', plugin.lightbox);
-                }
+                plugin.lightbox = $("#" + id);
+
+                plugin.caption = $('.lightbox__caption', plugin.lightbox);
 
                 if (plugin.items.length > 1 && opts.nav) {
-                    $('.lightbox-nav', plugin.lightbox).show();
+                    $('.lightbox__nav', plugin.lightbox).show();
                 } else {
-                    $('.lightbox-nav', plugin.lightbox).hide();
+                    $('.lightbox__nav', plugin.lightbox).hide();
                 }
 
                 plugin.bindEvents();
@@ -63,16 +60,16 @@
             },
 
             loadImage: function () {
-                if(opts.blur) {
+                if (opts.blur) {
                     $("body").addClass("blurred");
                 }
                 $("img", plugin.lightbox).remove();
-                plugin.lightbox.fadeIn('fast').append('<span class="lightbox-loading"></span>');
+                plugin.lightbox.fadeIn('fast').append('<span class="lightbox__loading"></span>');
 
                 var img = $('<img src="' + $(plugin.current).attr('href') + '" draggable="false">');
 
-                $(img).load(function () {
-                    $('.lightbox-loading').remove();
+                $(img).on('load', function () {
+                    $('.lightbox__loading').remove();
                     plugin.lightbox.append(img);
                     plugin.image = $("img", plugin.lightbox).hide();
                     plugin.resizeImage();
@@ -82,10 +79,10 @@
 
             setCaption: function () {
                 var caption = $(plugin.current).data('caption');
-                if(!!caption && caption.length > 0) {
+                if (!!caption && caption.length > 0) {
                     plugin.caption.fadeIn();
                     $('p', plugin.caption).text(caption);
-                }else{
+                } else {
                     plugin.caption.hide();
                 }
             },
@@ -109,9 +106,9 @@
                 }
 
                 plugin.image.width(iWidth).height(iHeight).css({
-						'top': ($(window).height() - plugin.image.outerHeight()) / 2 + 'px',
-						'left': ($(window).width() - plugin.image.outerWidth()) / 2 + 'px'
-					}).show();
+                    'top': ($(window).height() - plugin.image.outerHeight()) / 2 + 'px',
+                    'left': ($(window).width() - plugin.image.outerWidth()) / 2 + 'px'
+                }).show();
                 plugin.locked = false;
             },
 
@@ -145,7 +142,7 @@
 
             bindEvents: function () {
                 $(plugin.items).click(function (e) {
-                    if(!$("#lightbox").is(":visible") && ($(window).width() < opts.minSize || $(window).height() < opts.minSize)) {
+                    if (!plugin.lightbox.is(":visible") && ($(window).width() < opts.minSize || $(window).height() < opts.minSize)) {
                         $(this).attr("target", "_blank");
                         return;
                     }
@@ -179,19 +176,19 @@
                 });
 
                 // Previous click
-                $(plugin.lightbox).on('click', '.lightbox-previous', function () {
+                $(plugin.lightbox).on('click', '.lightbox__nav--prev', function () {
                     plugin.previous();
                     return false;
                 });
 
                 // Next click
-                $(plugin.lightbox).on('click', '.lightbox-next', function () {
+                $(plugin.lightbox).on('click', '.lightbox__nav--next', function () {
                     plugin.next();
                     return false;
                 });
 
                 // Close click
-                $(plugin.lightbox).on('click', '.lightbox-close', function () {
+                $(plugin.lightbox).on('click', '.lightbox__close', function () {
                     plugin.close();
                     return false;
                 });

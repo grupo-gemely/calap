@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 
 
 
-	/************** Gallery Hover Effect *********************/
+	/************** Gallery Hover Effect ********************/
 	$(".overlay").hide();
 
 	$('.gallery-item').hover(
@@ -16,14 +16,10 @@ jQuery(document).ready(function($){
 	);
 
 
-	/************** LightBox *********************/
+	/************** LightBox ********************/
 	$(function(){
-		$('[data-rel="lightbox1"]').lightbox();
-	});
-
-
-	$(function(){
-		$('[data-rel="lightbox2"]').lightbox();
+		$('.lightbox1 .box .boxInner a').lightbox();
+		$('a[rel=lightbox2]').lightbox();
 	});
 
 
