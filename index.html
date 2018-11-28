@@ -185,7 +185,7 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 		
 		
 <br>
-<div class="row">
+<div id="nservice" class="row">
 		<div class="col-md-12 colorlib-heading center-heading text-center animate-box">
 			<h1 class="heading-big">NUESTROS SERVICIOS</h1>
 			<h2>NUESTROS <b style="color:#ffa658">SERVICIOS</b></h2>
@@ -233,7 +233,7 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 											   </a>
 										</div>
 									</div>
-									<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 bhoechie-tab animate-box">
+									<div id="cuerpo" class="col-lg-9 col-md-9 col-sm-12 col-xs-12 bhoechie-tab animate-box">
 											<!-- flight section -->
 											
 											<div class="bhoechie-tab-content active">
@@ -914,16 +914,13 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 									<div class="col-sm-5">
 										<form role="form">
 											<div class="form-group">
-												<label for="inputName">Nombre/Apellidos</label>
-												<input type="text" class="form-control" style="height: 34px;" id="inputName" placeholder="Ingresa tu nombre/apellido"/>
+												<input type="text" class="form-control" style="height: 34px;" id="inputName" placeholder="Ingresa tu nombre/apellido..."/>
 											</div>
 											<div class="form-group">
-												<label for="inputEmail">Email</label>
-												<input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu email"/>
+												<input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu email..."/>
 											</div>
 											<div class="form-group">
-												<label for="inputMessage">Mensaje</label>
-												<textarea class="form-control" id="inputMessage" placeholder="Ingresa tu mensaje"></textarea>
+												<textarea class="form-control" id="inputMessage" placeholder="Ingresa tu mensaje..."></textarea>
 											</div>
 										</form>
 										<center>
@@ -1114,8 +1111,12 @@ function goToId(idName)
 <script>
 	if(window.matchMedia('(max-width: 992px)').matches){
 		$('div.bhoechie-tab-container').css('margin-left', '0px');
+		$('#cuerpo').css('margin-top','3px');
+		$('#nservice').css('margin-top','3px');
 	}else{
 		$('div.bhoechie-tab-container').css('margin-left', '50px');
+		$('#cuerpo').css('margin-top','0px');
+		$('#nservice').css('margin-top','0px');
 	}
 </script>
 	</body>
