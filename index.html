@@ -58,9 +58,6 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	
-
-
-
 	</head>
 	<body>
 			<script>(function(d, s, id) {
@@ -393,6 +390,15 @@ logged_out_greeting="Hola, Inicia session en Facebook para ayudarte">
 			<br>
 			<br>
 			
+			<script>
+				$(function(){
+					if(window.matchMedia('(max-width: 992px)').matches){
+						alert(2);
+					}else{
+
+					}
+			});
+			</script>
 <style>
 /*  bhoechie tab */
 div.bhoechie-tab-container{
@@ -402,7 +408,7 @@ div.bhoechie-tab-container{
   border-radius: 4px;
   -moz-border-radius: 4px;
   margin-top: 20px;
-	margin-left: 50px;
+	/* margin-left: 50px; */
 	
 	
 	background-clip: padding-box;
