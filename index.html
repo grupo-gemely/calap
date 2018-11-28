@@ -1110,11 +1110,14 @@ function goToId(idName)
 	
 <script>
 	if(window.matchMedia('(max-width: 992px)').matches){
-		$('div.bhoechie-tab-container').css('margin-left', '0px');
+		$('div.bhoechie-tab-container').css('margin-left', '5px');
+		$('div.bhoechie-tab-container').css('margin-right', '5px');
 		$('#cuerpo').css('margin-top','13px');
 		$('#nservice').css('margin-top','33px');
+
 	}else{
 		$('div.bhoechie-tab-container').css('margin-left', '50px');
+		$('div.bhoechie-tab-container').css('margin-right', '0px');
 		$('#cuerpo').css('margin-top','0px');
 		$('#nservice').css('margin-top','0px');
 	}
